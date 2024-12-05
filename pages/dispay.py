@@ -148,7 +148,8 @@ def main():
 
     st.title("List of Word")
     st.write("Words")
-
+    st.subheader(f"Words starting with '{letter.upper()}':")
+    st.write(", ".join(word_list))
 	
     st.page_link("main.py", label="Back to home page")
 
