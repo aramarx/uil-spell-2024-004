@@ -1,0 +1,12 @@
+cookie:
+  expiry_days: 10
+  key: some_signature_keys
+  name: some_cookie_name
+credentials:
+  usernames:
+    hoge:
+      email: 
+      name: 
+      password: $2b$12$BTnvK9H8BJV9UBp/fCK3iOpAor4a2lCSZpoUZmPK0NY0WNZ3L34pS
+preauthorized:
+  emails:
