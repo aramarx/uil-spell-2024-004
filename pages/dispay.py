@@ -159,7 +159,7 @@ def main():
         for letter, word_list in tests.items():
             st.subheader(f"Words starting with '{letter.upper()}':")
             st.write(", ".join(word_list))
-        st.button("main.py", label="Back to home page")
+        st.page_link("main.py", label="Back to home page")
 	
 if __name__ == "__main__":
     main()
