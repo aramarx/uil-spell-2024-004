@@ -31,16 +31,16 @@ if 'authentication_status' not in st.session_state:
 
 if st.session_state["authentication_status"]:
     authenticator.logout('Logout', 'main')
-    st.write(f'ログインに成功しました')
+    st.write(f'Login successful')
 		
   
   
-        #ログイン後の処理
+        #After login process
 
     with st.form(key="1_form"): 
 
         st.subheader('1号')
-        #テキストボックス
+        #Text box
         tank1A= st.text_input(('1-A'),0)
         a1= st.checkbox("1a")
         tank1B= st.text_input(('1-B'),0)
@@ -50,7 +50,7 @@ if st.session_state["authentication_status"]:
         st.write(f"---------")
                
         st.subheader('2号')
-        #テキストボックス
+        #Text box
         tank2A= st.text_input(('2-A'),0)
         a2= st.checkbox("2a")
         tank2B= st.text_input(('2-B'),0)
@@ -60,7 +60,7 @@ if st.session_state["authentication_status"]:
         st.write(f"---------")
                 
         st.subheader('3号')
-        #テキストボックス
+        #Text box
         tank3A= st.text_input(('3-A'),0)
         a3= st.checkbox("3a")
         tank3B= st.text_input(('3-B'),0)
@@ -70,7 +70,7 @@ if st.session_state["authentication_status"]:
         st.write(f"---------")
         
         st.subheader('4号')
-        #テキストボックス
+        #Text box
         tank4A= st.text_input(('4-A'),0)
         a4= st.checkbox("4a")
         tank4B= st.text_input(('4-B'),0)
@@ -80,7 +80,7 @@ if st.session_state["authentication_status"]:
         st.write(f"---------")
                 
         st.subheader('5号')
-        #テキストボックス
+        #Text box
         tank5A= st.text_input(('5-A'),0)
         a5= st.checkbox("5a")
         tank5B= st.text_input(('5-B'),0)
@@ -90,7 +90,7 @@ if st.session_state["authentication_status"]:
         st.write(f"---------")
                 
         st.subheader('6号')
-        #テキストボックス
+        #Text box
         tank6A= st.text_input(('6-A'),0)
         a6= st.checkbox("6a")
         tank6B= st.text_input(('6-B'),0)
@@ -100,7 +100,7 @@ if st.session_state["authentication_status"]:
         st.write(f"---------")
                 
         st.subheader('7号')
-        #テキストボックス
+        #Text box
         tank7A= st.text_input(('7-A'),0)
         a7= st.checkbox("7a")
         tank7B= st.text_input(('7-B'),0)
@@ -110,7 +110,7 @@ if st.session_state["authentication_status"]:
         st.write(f"---------")
                 
         st.subheader('8号')
-        #テキストボックス
+        #Text box
         tank8A= st.text_input(('8-A'),0)
         a8= st.checkbox("8a")
         tank8B= st.text_input(('8-B'),0)
@@ -123,14 +123,14 @@ if st.session_state["authentication_status"]:
         hour_later = st.number_input('時間',0)
 
         
-        submit_btn = st.form_submit_button("送信")
-        cancel_btn = st.form_submit_button("キャンセル")
+        submit_btn = st.form_submit_button("Submit")
+        cancel_btn = st.form_submit_button("Cancel")
         st.write(f"ver 1.1")
         
 
     if submit_btn:
                 
-        #リストファイルをつくる
+        #Create a list file
         f = open('list.txt','wb')
         
         list_start = []
@@ -191,7 +191,7 @@ if st.session_state["authentication_status"]:
         hour_later_list.append(int(hour_later))  
 
                   
-        #リストファイルを保存 
+        #Save the list file 
         pickle.dump(list0,f)   
         pickle.dump(list1,f)
         pickle.dump(list2,f)
@@ -357,6 +357,6 @@ if st.session_state["authentication_status"]:
         
         ####
 elif st.session_state["authentication_status"] is False:
-    st.error('ユーザ名またはパスワードが間違っています')
+    st.error('The username or password is incorrect')
 elif st.session_state["authentication_status"] is None:
-    st.warning('ユーザ名やパスワードを入力してください') 
+    st.warning('Please enter your username and password') 
