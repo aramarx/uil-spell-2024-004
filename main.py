@@ -37,10 +37,10 @@ if st.session_state["authentication_status"]:
   
         #After login process
 
-def main():
-    st.title("UIL Dashboard")
+	def main():
+    	st.title("UIL Dashboard")
 
-    st.page_link("UIL_dashboard.py", label="Back to home page")
+    	st.page_link("UIL_dashboard.py", label="Back to home page")
 	
         ####
 elif st.session_state["authentication_status"] is False:
