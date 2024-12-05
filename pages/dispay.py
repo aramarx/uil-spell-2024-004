@@ -147,8 +147,7 @@ words = [
 def main():
 
     st.title("List of Word")
-    st.write("Words
-	     ")
+    st.write("Words")
 
 	
     st.page_link("main.py", label="Back to home page")
