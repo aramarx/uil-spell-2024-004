@@ -7,6 +7,6 @@ credentials:
     user5a:
       email: aramarx.us@gmail.com 
       name: User Five A
-      password: $2b$12$BTnvK9H8BJV9UBp/fCK3iOpAor4a2lCSZpoUZmPK0NY0WNZ3L34pS
+      password: cheatham5a1
 preauthorized:
   emails: aramarx.us@gmail.com
