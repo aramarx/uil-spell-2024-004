@@ -147,8 +147,7 @@ words = [
 def main():
 
     st.title("List of Word")
-    st.write("
-    Words starting with 'A':
+    st.write("Words starting with 'A':
 abbreviate, abnormality, abode, abrasion, abundantly, academic, accessory, accordion, acidic, acne, acrobat, adhesive, admirable, adoption, adversary, affected, affliction, affordable, agenda, airport, alimony, allergic, alliance, alpaca, alphabetical, amateur, amplify, amusing, animate, anklebone, annex, antibacterial, antibiotic, anxiety, apparition, appease, applause, aptitude, aquamarine, arcade, arrangement, assortment, athletic, attractive, auditory, avalanche, avocado
 
 Words starting with 'B':
