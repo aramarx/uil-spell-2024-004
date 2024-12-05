@@ -155,8 +155,7 @@ def main():
     )
 
 def view_words(self):
-    st.write("List of Words")
-    	for letter, word_list in tests.items():
+    st.write("List of Words") for letter, word_list in tests.items():
     st.subheader(f"Words starting with '{letter.upper()}':")
     st.write(", ".join(word_list))
     st.page_link("main.py", label="Back to home page")
