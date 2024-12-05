@@ -148,7 +148,8 @@ def main():
 
     st.title("UIL Dashboard")
     st.write("List of Words")
-
+    st.subheader(f"Words starting with '{letter.upper()}':")
+	
     st.page_link("main.py", label="Back to home page")
 
     st.write(
@@ -157,7 +158,7 @@ def main():
 
 def view_words(self):
 
-    st.subheader(f"Words starting with '{letter.upper()}':")
+
     st.write(", ".join(word_list))
     st.page_link("main.py", label="Back to home page")
 	
