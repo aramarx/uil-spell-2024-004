@@ -13,4 +13,10 @@ def main():
     st.title("UIL Dashboard")
 
     st.page_link("UIL_dashboard.py", label="Back to home page")
+
+    st.write(
+        "This dashboard was created by [Blaine Cowen](mailto:blaine.cowen@gmail.com)"
+    )
 	
+if __name__ == "__main__":
+    main()
