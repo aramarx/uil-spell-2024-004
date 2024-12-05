@@ -38,8 +38,6 @@ if st.session_state["authentication_status"]:
         #After login process
 
     with st.form(key="1_form"): 
-
-
 	    
 	st.subheader('1号')
         #Text box
@@ -131,8 +129,7 @@ if st.session_state["authentication_status"]:
         
 
     if submit_btn:
-
-                
+  
         #Create a list file
         f = open('list.txt','wb')
         
