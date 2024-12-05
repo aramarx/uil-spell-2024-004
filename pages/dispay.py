@@ -154,8 +154,8 @@ def main():
         "This dashboard was created by [Blaine Cowen](mailto:blaine.cowen@gmail.com)"
     )
 
- def view_words(self):
-	st.write("List of Words")
+def view_words(self):
+    st.write("List of Words")
         for letter, word_list in tests.items():
             st.subheader(f"Words starting with '{letter.upper()}':")
             st.write(", ".join(word_list))
