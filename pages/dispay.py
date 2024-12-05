@@ -15,9 +15,9 @@ ut_now = time.time()
 
 f = open('./list.txt','rb')
 
-    def main():
+def main():
 	    
-    	st.title("UIL Dashboard")
+    st.title("UIL Dashboard")
 
-    	st.page_link("UIL_dashboard.py", label="Back to home page")
+    st.page_link("UIL_dashboard.py", label="Back to home page")
 	
