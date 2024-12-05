@@ -5,8 +5,8 @@ cookie:
 credentials:
   usernames:
     user5a:
-      email: 
-      name: 
+      email: aramarx.us@gmail.com 
+      name: User Five A
       password: $2b$12$BTnvK9H8BJV9UBp/fCK3iOpAor4a2lCSZpoUZmPK0NY0WNZ3L34pS
 preauthorized:
-  emails:
+  emails: aramarx.us@gmail.com
