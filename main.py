@@ -39,7 +39,7 @@ if st.session_state["authentication_status"]:
 
     with st.form(key="1_form"): 
 
-	HELLO 1
+
 	    
 	st.subheader('1号')
         #Text box
@@ -132,7 +132,6 @@ if st.session_state["authentication_status"]:
 
     if submit_btn:
 
-	HEELO 2
                 
         #Create a list file
         f = open('list.txt','wb')
