@@ -35,9 +35,6 @@ if st.session_state["authentication_status"]:
 		
   
         #After login process
- 
-
-if submit_btn:
   
         
         ####
