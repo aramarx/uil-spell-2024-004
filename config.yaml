@@ -8,5 +8,33 @@ credentials:
       email: aramarx.us@gmail.com 
       name: User Five A
       password: cheatham5a1
+    user5b:
+      email: aramarx.us@gmail.com 
+      name: User Five B
+      password: cheatham5b2
+    user5c:
+      email: aramarx.us@gmail.com 
+      name: User Five C
+      password: cheatham5c3
+    user5t:
+      email: aramarx.us@gmail.com 
+      name: User Five T
+      password: cheatham5t4
+    user6a:
+      email: aramarx.us@gmail.com 
+      name: User Six A
+      password: cheatham6a5
+    user6b:
+      email: aramarx.us@gmail.com 
+      name: User Six B
+      password: cheatham6b6
+    user6c:
+      email: aramarx.us@gmail.com 
+      name: User Six C
+      password: cheatham6c7
+    user6d:
+      email: aramarx.us@gmail.com 
+      name: User Six T
+      password: cheatham6t8
 preauthorized:
   emails: aramarx.us@gmail.com
