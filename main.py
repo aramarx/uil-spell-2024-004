@@ -6,7 +6,10 @@ import time
 import streamlit_authenticator as stauth
 import yaml
 
+def main():
+    st.title("UIL Dashboard")
 
+    st.page_link("UIL_dashboard.py", label="Back to home page")
 
 ######################
 
