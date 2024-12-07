@@ -8,14 +8,17 @@ import yaml
 
 ######################
 
+# Define timezone difference
 DIFF_JST_FROM_UTC = 9
 ent_time = datetime.datetime.utcnow() + datetime.timedelta(hours=DIFF_JST_FROM_UTC)
 
 start = time.time() 
 
+# Load configuration
 with open('config.yaml') as file:
     config = yaml.load(file, Loader=yaml.SafeLoader)
 
+# Create an authenticator instance
 authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
@@ -24,6 +27,7 @@ authenticator = stauth.Authenticate(
     config['preauthorized'],
 )
 
+# User login process
 name, authentication_status, username = authenticator.login('main', 'main')
 
 
