@@ -35,6 +35,7 @@ if 'authentication_status' not in st.session_state:
     st.session_state['authentication_status'] = None
 
 if st.session_state["authentication_status"]:
+    # Successful login, redirect to the next page
     authenticator.logout('Logout', 'main')
     st.write(f'Login successful')
 		
