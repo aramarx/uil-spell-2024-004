@@ -47,9 +47,9 @@ if st.session_state["authentication_status"]:
     	# Add redirect to the page after login
     	st.experimental_rerun()
 	    
-	st.title("UIL Dashboard")
+	#st.title("UIL Dashboard")
 
-    	st.page_link("pages/dispay.py", label="Back to home page")
+    	#st.page_link("pages/dispay.py", label="Back to home page")
 	
         ####
 elif st.session_state["authentication_status"] is False:
