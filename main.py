@@ -2,12 +2,17 @@ import streamlit as st
 import pickle
 import datetime
 import time
+
 import streamlit_authenticator as stauth
 import yaml
+
+######################
 
 # Define timezone difference
 DIFF_JST_FROM_UTC = 9
 ent_time = datetime.datetime.utcnow() + datetime.timedelta(hours=DIFF_JST_FROM_UTC)
+
+start = time.time() 
 
 # Load configuration
 with open('config.yaml') as file:
@@ -25,20 +30,25 @@ authenticator = stauth.Authenticate(
 # User login process
 name, authentication_status, username = authenticator.login('main', 'main')
 
+
 if 'authentication_status' not in st.session_state:
     st.session_state['authentication_status'] = None
 
-if authentication_status:
-    # Successful login, redirect to the next page
+if st.session_state["authentication_status"]:
     authenticator.logout('Logout', 'main')
     st.write(f'Login successful')
-    
-    # Add redirect to the page after login
-    st.session_state['authenticated'] = True
-    st.experimental_rerun()
+		
+  
+        #After login process
 
-elif authentication_status is False:
+    def main():
+	    
+    	st.title("UIL Dashboard")
+
+    	st.page_link("UIL_dashboard.py", label="Back to home page")
+	
+        ####
+elif st.session_state["authentication_status"] is False:
     st.error('The username or password is incorrect')
-
-elif authentication_status is None:
-    st.warning('Please enter your username and password')
+elif st.session_state["authentication_status"] is None:
+    st.warning('Please enter your username and password') 
