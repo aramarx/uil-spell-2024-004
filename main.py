@@ -40,7 +40,6 @@ if st.session_state["authentication_status"]:
     st.write(f'Login successful')
 		
     # Add redirect to the page after login
-    st.session_state['authenticated_status'] = True
     st.experimental_rerun()
 
 	
