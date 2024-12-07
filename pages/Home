@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Spelling Test</title>
+</head>
+<body>
+    <h1>Welcome to the Charger ⚡ Spelling Test</h1>
+    <!-- Inject the API key into the script tag -->
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key={{ api_key }}"></script>
+    <p>Test your spelling skills by selecting a test for each letter of the alphabet!</p>
+
+    <h2>👦What would you like to do?👩</h2>
+    
+    <ul>
+        <li><a href="{{ url_for('select_test') }}">Select Test</a></li>
+        <li><a href="{{ url_for('historical_misspelled_word_list') }}">Historical Misspelled Words</a></li>
+    </ul>
+</body>
+</html>
