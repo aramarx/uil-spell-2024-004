@@ -39,7 +39,11 @@ if st.session_state["authentication_status"]:
     authenticator.logout('Logout', 'main')
     st.write(f'Login successful')
 		
-  
+    # Add redirect to the page after login
+    st.session_state['authenticated'] = True
+    st.experimental_rerun()
+
+	
         #After login process
 
     def main():
