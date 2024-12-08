@@ -45,7 +45,7 @@ if st.session_state["authentication_status"]:
     def main():
 	    
     	# Add redirect to the page after login
-    	st.experimental_rerun()
+    	#st.experimental_rerun()
 	    
 	#st.title("UIL Dashboard")
 
