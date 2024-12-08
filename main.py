@@ -43,7 +43,7 @@ if st.session_state["authentication_status"]:
 	
         #After login process
 
-    def main():
+    #def main():
 	    
     	# Add redirect to the page after login
     	#st.experimental_rerun()
