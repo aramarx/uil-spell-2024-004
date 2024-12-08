@@ -37,13 +37,13 @@ if 'authentication_status' not in st.session_state:
 if st.session_state["authentication_status"]:
     # Successful login, redirect to the next page
     authenticator.logout('Logout', 'main')
-    #st.experimental_rerun()
+
     st.write(f'Login successful')		
 
 	
         #After login process
 
-    #def main():
+    def main():
 	    
     	# Add redirect to the page after login
     	st.experimental_rerun()
